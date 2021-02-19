@@ -1,12 +1,35 @@
+@font-face{
+    font-family: 'raleway';
+    src:url('Projet 2 - Reservia/Police/Raleway-Black.ttf');
+    src:url('Projet 2 - Reservia/Police/Raleway-BlackItalic.ttf');
+    src:url('Projet 2 - Reservia/Police/Raleway-Bold.ttf');
+    src:url('Projet 2 - Reservia/Police/Raleway-BoldItalic.ttf');
+    src:url('Projet 2 - Reservia/Police/Raleway-ExtraLight.ttf');
+    src:url('Projet 2 - Reservia/Police/Raleway-ExtraLightItalic.ttf');
+    src:url('Projet 2 - Reservia/Police/Raleway-Italic.ttf');
+    src:url('Projet 2 - Reservia/Police/Raleway-Light.ttf');
+    src:url('Projet 2 - Reservia/Police/Raleway-LightItalic.ttf');
+    src:url('Projet 2 - Reservia/Police/Raleway-Medium.ttf');
+    src:url('Projet 2 - Reservia/Police/Raleway-MediumItalic.ttf');
+    src:url('Projet 2 - Reservia/Police/Raleway-SemiBold.ttf');
+    src:url('Projet 2 - Reservia/Police/Raleway-SemiBoldItalic.ttf');
+    src:url('Projet 2 - Reservia/Police/Raleway-Thin.ttf');
+    src:url('Projet 2 - Reservia/Police/Raleway-ThinItalic.ttf');
+    src:url('Projet 2 - Reservia/Police/Raleway-Regular.ttf');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
 #bloc_page
 {
-    
+
     margin: auto;
-    
 }
 
 header
 {
+    font-family:"raleway";
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -19,44 +42,103 @@ header
     width: 130px;
     
 }
+
+#menu{
+    font-family:"raleway";
+    display: flex;
+    justify-content: space-between;
+}
+
+
 nav
 {
     display: flex;
-    justify-content: flex-end;
     height: 60px;
-    width: 300px;
-    
-    
+    width: 700px;
+      
 }
 nav ul
 {
     display: flex;
+    justify-content: space-between;
     list-style-type: none;
+    margin: auto;
+    
 }
 nav li
 {
-   display: flex;
-   width: 120px;
-   height: 100px;
-   
+   font-size: 1.1em;   
+   height: 100px; 
 }
-nav a:hover
+nav li strong{
+    color: blue;
+}
+.overline:hover{
+  
+    color: blue;
+    text-decoration: overline;
+    
+}
+
+#Bouton_recherche
 {
-   color: blue;
+    margin-right: 1806px;
+    border: solid rgb(207, 204, 204);
+    border-radius: 10px;
 }
+#Bouton_recherche span
+{
+    background-color: blue;
+    color: white;
+}
+
+
 
 #localisation h1
 {
+    font-family:"raleway" ;
     margin-bottom: 3px;
     font-size: 17px;
 }
 
 #localisation p
 {
+    font-family:"raleway" ;
     margin-top: 3px;
     font-size: 15px;
 }
 
-  
+#filtres
+{
+    font-family:"raleway" ;
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 30px;
+    margin-right: 900px;
+    
+}
+#filtres h3
+{
+    font-family:"raleway";
+    margin-top: 0px;
+}
 
+span
+{
+    font-family:"raleway" ;
+}
 
+#titre h1{
+    font-family:"raleway";
+    margin-left: 40px;
+}
+
+#resultat
+{
+   margin-right: 1100px;
+}
+#liste{
+    font-family:"raleway";
+    display: flex;
+    flex-wrap: wrap;
+}

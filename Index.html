@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="styles.css">
         <title>Reservia</title>
+        <script src="https://kit.fontawesome.com/9c6404a8df.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -12,14 +13,16 @@
             <header>
                     <div id="logo_reservia">
                         <img src="Projet 2 - Reservia/images/logo/Reservia@3x.png" alt="logo"/>                       
-                    </div>       
+                    </div>
+                    <div id="menu">    
                         <nav>
                             <ul>
-                                <li><a href="#"></a>Hébergement</a></li>
-                                <li><a href="#"></a>Activités</a></li>
-                                <li><a href="#"></a><strong>S'inscrire</strong></a></li>
+                                <li class="overline"><a href="#"></a>Hébergement</a></li>
+                                <li class="overline"><a href="#"></a>Activités</a></li>
+                                <li class="overline"><a href="#"></a><strong>S'inscrire</strong></a></li>
                             </ul>
-                        </nav>                                        
+                        </nav> 
+                    </div>                                              
             </header>  
 
             <!--1ere section localisation et filtre de recherche-->
@@ -27,12 +30,79 @@
                 <div id="localisation">
                     <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>  
-                </div>
+                
+                    <div id="Bouton_recherche">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="search" id="search"></input> 
+                        <button type="Rechercher"><span>Rechercher</span></button>  
+                    </div>
+                        <div id="filtres">
+                        <h3>Filtres</h3>
+                            <div id="money">
+                                <i class="fas fa-money-bill-wave"></i>Economique
+                            </div>
+                            <div id="compo">
+                                <i class="fas fa-child"></i>Familial
+                            </div>
+                            <div id="Ambiance">
+                                <i class="fas fa-heart"></i>Romantique
+                            </div>
+                            <div id="Animaux">
+                                <i class="fas fa-dog"></i>Animaux acceptés
+                            </div>
+                        </div>
+                        <div id="Info">
+                            <i class="fas fa-info-circle"></i><span>Plus de 500 logement sont disponible dans cette ville</span>
+                        </div>
+                    </div>
+                </div>    
             </section>
 
             <!--2ème section resultat de recherche et proposition de logement-->
             <section>
-
+                <div id="resultat">
+                    <div id="titre">
+                       <h1>Hébergement à Marseille</h1>
+                    </div>
+                        <div id="liste">
+                            <figure class="Miniatures">
+                                    <img src="Projet 2 - Reservia/images/hebergements/5_mini/Miniature1.jpg" alt="Photo Chambre Marcus">
+                                    <figcaption><strong>Auberge de la Cannebière</strong></figcaption>
+                                    <citation>Nuit à partir de 25€</citation>
+                                    <rating>☆☆☆☆☆</rating>
+                            </figure>       
+                            <figure>
+                                    <img src="Projet 2 - Reservia/images/hebergements/5_mini/Miniature2.jpg" alt="Photo hotel du port">
+                                    <figcaption><strong>Hôtel du port</strong></figcaption>
+                                    <citation>Nuit à partir de 52€</citation>
+                                    <rating>☆☆☆☆☆</rating>
+                                </figure>                                  
+                                <figure>
+                                    <img src="Projet 2 - Reservia/images/hebergements/5_mini/Miniature3.jpg" alt="Photo Hotel les mouettes">
+                                    <figcaption><strong>Hôtel Les mouettes</strong></figcaption>
+                                    <citation>Nuit à partir de 76€</citation>
+                                    <rating>☆☆☆☆☆</rating>
+                                </figure>        
+                                <figure>
+                                    <img src="Projet 2 - Reservia/images/hebergements/5_mini/Miniature4.jpg" alt="Photo Hotel de la mer">
+                                    <figcaption><strong>Hôtel de la mer</strong></figcaption>
+                                    <citation>Nuit à partir de 46€</citation>
+                                    <rating>☆☆☆☆☆</rating>
+                                </figure>        
+                                <figure>
+                                    <img src="Projet 2 - Reservia/images/hebergements/5_mini/Miniature5.jpg" alt="Photo Auberge le panier">
+                                    <figcaption><strong>Auberge le panier</strong></figcaption>
+                                    <citation>Nuit à partir de 23€</citation>
+                                    <rating>☆☆☆☆☆</rating>
+                                </figure>        
+                                <figure>
+                                    <img src="Projet 2 - Reservia/images/hebergements/5_mini/Miniature6.jpg" alt="Photo hotel chez Amina">
+                                    <figcaption><strong>Hotel Chez Amina</strong></figcaption>
+                                    <citation>Nuit à partir de 96€</citation>
+                                    <rating>☆☆☆☆☆</rating>
+                                </figure>         
+                        </div>   
+                </div>
             </section>
 
             <!--Aside les plus populaires-->
