@@ -4,34 +4,34 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="ReserviaCSS.css">
-        <link rel="stylesheet" type="text/css" href="CSS/reservia.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <title>Reservia</title>
         <script src="https://kit.fontawesome.com/9c6404a8df.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <!--Header comprenant logo titres et bandeau de navigation-->
-            <header>
-                <div class="Container">
-                    <img src="Projet 2 - Reservia/images/logo/Reservia@3x.png" alt="logo"/>                          
-                        <nav>
-                            <ul>
-                                <li><a href="#">Hébergement</a></li>
-                                <li><a href="#">Activités</a></li>
-                                <li><a href="#"><strong>S'inscrire</strong></a></li>
-                            </ul>
-                        </nav> 
-                </div>                                                 
-            </header>  
+        <header>
+            <img src="Projet 2 - Reservia/images/logo/Reservia@3x.png" alt="logo"/>                          
+            <nav>
+                <ul>
+                    <li><a href="#selection">Hébergement</a></li>
+                    <li><a href="#Activities">Activités</a></li>
+                    <li><a href="#" class="register">S'inscrire</a></li>
+                </ul>
+            </nav>                                               
+        </header>  
+
+        
         <!--1ere section localisation et filtre de recherche-->
 
 
-            <section id="blockrecherche">
+            <section id="housing">
                 <div class="Container">
                     <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                         <div class="searchbar">
-                            <div id="position">
+                            <div id="logoposition">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                                 <form action="" class="form">
@@ -39,7 +39,7 @@
                                     <button type="Rechercher"><span>Rechercher</span></button>  
                                 </form>
                         </div>  
-                            <div class="filtres">
+                            <div class="filter">
                             <h2>Filtres</h2>
                                 <div class="liste">
                                     <section class="blockfiltre">
@@ -162,7 +162,7 @@
                             </article>
                         </div>
                         <div id="more">
-                        <p><a href="#"style="text-decoration:none">Afficher plus</p>
+                        <p><a href="#">Afficher plus</p>
                         </div>
                     </div>
 
@@ -224,40 +224,87 @@
 
             <!--3ème section activité lieu selectionné-->
             
-            <section id="Activités">
-                <div class="Container">
-                    <h2>Activités à Marseille</h2>
-                        <div class="Photos">
-                            <div class="PhotosAct1">
-                                <img src="Projet 2 - Reservia/images/activites/5_Ajust/1vieux port ajust.jpg" alt="vieux port">
-                                <h3>Vieux port</h3>    
+            <section id="Activities">
+                <h2>Activités à Marseille</h2>
+
+                    <div class="TopActivities">
+                        <div class="result">
+                            
+                            <figure class="boxactivities1">
+                                <a href="#">
+                                    <img src="Projet 2 - Reservia/images/activites/4_small/1reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port">
+                                </a>
+                                <figcaption><h3>Vieux port</h3></figcaption> 
+                            </figure>
+                            
+                            <div id="column2">
+                                <figure class="boxactivities2">
+                                    <a href="#">   
+                                        <img src="Projet 2 - Reservia/images/activites/4_small/2paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                                    </a> 
+                                        <figcaption><h3>Fort de Pomègues</h3></figcaption>
+                                </figure>                                        
+                                <figure class="boxactivities3">
+                                    <a href="#">
+                                        <img src="Projet 2 - Reservia/images/activites/4_small/3kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"Îles de Frioul"> 
+                                    </a>
+                                        <figcaption><h3>Îles de Frioul</h3></figcaption> 
+                                </figure>
                             </div>
-                            <div class="PhotosAct2">
-                                <img src="Projet 2 - Reservia/images/activites/5_Ajust/3Fort de Pomègues.jpg" alt="Fort de Pomègues">
-                                <h3>Fort de Pomègues</h3>
-                            </div>    
-                            <div class="PhotosAct3">
-                                <img src="Projet 2 - Reservia/images/activites/5_Ajust/4Îles des Frioul.jpg" alt="Îles de Frioul">
-                                <h3>Îles de Frioul</h3>
+                            
+                                <figure class="boxactivities4">
+                                    <a href="#">
+                                        <img src="Projet 2 - Reservia/images/activites/4_small/4kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"Parc National des Calanques">
+                                    </a>
+                                        <figcaption><h3>Parc National des Calanques</h3></figcaption> 
+                                </figure>
+
+                            <div id="column4">  
+                                <figure class="boxactivities5">
+                                    <a href="#">   
+                                        <img src="Projet 2 - Reservia/images/activites/4_small/5florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"> 
+                                    </a> 
+                                        <figcaption><h3>Notre-Dame-de-la-Garde</h3></figcaption>
+                                </figure>
+                                <figure class="boxactivities6">
+                                    <a href="#">
+                                        <img src="Projet 2 - Reservia/images/activites/4_small/6lena-paulin-wH2-EJoDcV0-unsplash.jpg"Parc Longchamp">
+                                    </a>
+                                        <figcaption><h3>Parc Longchamp</h3></figcaption> 
+                                </figure>
                             </div>
-                            <div class="PhotosAct1">
-                                <img src="Projet 2 - Reservia/images/activites/5_Ajust/Webp.net-resizeimage (1).jpg" alt="Parc National des Calanques">
-                                <h3>Parc National des Calanques</h3>
-                            </div>
-                            <div class="PhotosAct2">
-                                <img src="Projet 2 - Reservia/images/activites/5_Ajust/5Notre-Dame-de-la-Garde.jpg" alt="Notre-Dame-de-la-Garde">
-                                <h3>Notre-Dame-de-la-Garde</h3>
-                            </div>
-                            <div class="PhotosAct2">
-                                <img src="Projet 2 - Reservia/images/activites/5_Ajust/6Parc Longchamp.jpg" alt="Parc Longchamp">
-                                <h3>Parc Longchamp</h3>
-                            </div>
-                        </div>    
-                </div>
+                        </div>
+
+                    </div>    
             </section>
 
             <!--footer comprenant 3 listes-->
             <footer>
+                    
+                        <div class="about">
+                            <h4>A Propos</h4>
+                                <ul>
+                                    <li><a href="#">Fonctionnement du site</a></li>
+                                    <li><a href="#">Conditions générales de vente</a></li>
+                                    <li><a href="#">Données et confidentialité</a></li>
+                                </ul>
+                        </div>
+                        <div class="conditions">
+                            <h4>Nos Hébergements</h4>
+                            <ul>
+                                <li><a href="#">Charte qualité</a></li>
+                                <li><a href="#">Soumettre votre hôtel</a></li>
+                            </ul>
+                        </div>
+                        <div class="assistance">
+                            <h4>Assistance</h4>
+                            <ul>
+                                <li><a href="#">Centre d'aide</a></li>
+                                <li><a href="#">Nous contacter</a></li>
+                            </ul>
+                        </div>
+                    
+            </footer>
 
             </footer>                                
     </body>

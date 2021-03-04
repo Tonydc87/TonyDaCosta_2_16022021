@@ -67,18 +67,26 @@ header ul {
 
 header ul li a:hover {
 
-    border-top: 2px solid #0065FC;
-    padding-top: 32px;   
+    border-top: 4px solid #0065FC;
+    padding-top: 33px;   
 }
 
 header ul li {
-    margin-left: 5rem;
+    margin-left: 7rem;
     font-size: 18px;
 }
 
 header ul li a:hover {
     color: #0065FC;
+    transition: all 1s ease;
+    
 }
+
+.register{
+    color: #0065FC;
+    border-top: inherit;
+}
+
 
 header nav
 {
@@ -126,31 +134,32 @@ header li{
 .searchbar button{
     height: 48px;
     width: 112px;
-    border-collapse: collapse;
-    
-    
+    border-collapse: collapse;   
     background-color:#0065FC;
     color: white;
     font-size: 18px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    cursor: pointer;
 }
 
 
 
 
-.filtres{
+.filter{
     margin-top: 30px;
     display: flex;
     align-items: center;
    
 }
 
-.filtres h2{
+.filter h2{
+    
     margin-right: 20px;
+    padding-top: 25px;
 }
 
-.filtres h3{
+.filter h3{
     margin: 0px;
     width: 200px;
     height: 48px;
@@ -161,10 +170,16 @@ header li{
     justify-content: center;
 }
 
-.filtres .liste{
+.filter .liste{
     display: flex;
     flex-wrap: wrap; 
     margin-top: 40px;   
+}
+
+.liste{
+    cursor: pointer;
+    
+    
 }
 
 .blockfiltre{
@@ -195,6 +210,7 @@ header li{
 .blockfiltre:hover{
     background-color:#0065FC;
     color: white;
+    transition: all 1s;
 }
 
 #Info{
@@ -242,13 +258,17 @@ header li{
 }
 .annonce img{
     
+    
     padding-left: 3px;
     padding-top: 3px;
     width: 313px;
     height: 180px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    object-fit: cover;
+    
 }
+
 
 .annonce{
     
@@ -262,7 +282,14 @@ header li{
     background-color: white;
     border-color: white;
     border-radius: 25px;
-    box-shadow: 5px 5px 5px 5px rgb(201, 201, 201);   
+    box-shadow: 5px 5px 5px 5px rgb(201, 201, 201); 
+    cursor: pointer;   
+}
+
+.annonce:hover{
+    transform:scale(1.05);
+    transition: all 1s ease;
+
 }
 
 .result{
@@ -303,7 +330,6 @@ header li{
     justify-content: flex-start;
     font-size: 20px;
     color: black;
-    
     font-weight: bold;
     padding-left: 40px;
     padding-bottom: 25px;   
@@ -369,6 +395,12 @@ header li{
     box-shadow: 5px 5px 5px 5px rgb(201, 201, 201);
 }
 
+#topselect .annonce2:hover{
+    transform:scale(1.05);
+    transition: all 1s ease;
+    transition: all 1s ease-out;
+}
+
 #topselect .annonce2 img{
     width: 190px;
     height: 180px;
@@ -379,6 +411,7 @@ header li{
     border-bottom-left-radius: 25px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+    object-fit: cover;
 }
 
 #topselect .description h3{
@@ -398,94 +431,240 @@ header li{
     position: static;
     padding-top: 70px;     
 }
+#more, a {
+    text-decoration: none;
+}
 
 
 
 /*----- Activité à Marseille -----*/
 
+#Activities{
+    height: auto;
+    width: 100%;
+    margin-top: 40px; 
+    
+}
 
-#Activités, h2{
-    margin-top: 60px;
+#Activities, .TopActivities{
+    display: inline-block;
+}
+#Activities, h2{
+    margin-left: 20px;
+    margin-top: 30px;
     color: black;
     
 }
-.Photos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-   
+.TopActivities{
     
+    justify-content: space-between;  
+       
 }
 
-.PhotosAct1{
-    width: auto;
-    height: auto;
-    border-style: solid;
+.TopActivities h3{
+    padding-left: 20px;
+}
+
+.boxactivities1{
+    width: 410px;
+    height: 580px;
+    align-items: flex-start;    
     margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 20px;
     margin-bottom: 20px;
     background-color: white;
     border-color: white;
     border-radius: 25px;
-    box-shadow: 5px 5px 5px 5px rgb(201, 201, 201); 
+    box-shadow: 5px 5px 5px 5px rgb(201, 201, 201);   
+    
 }
 
-.PhotosAct1 img{
-    width: 350px;
-    height: 90%;
-    position: relative;
-    margin-top: -4px;
-    margin-left: -4px;
-    margin-right: -4px;
+.boxactivities1 img{
+    
+    width: 410px;
+    height: 510px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    object-fit: cover;
 }
 
-.PhotosAct2{
-    width: auto;
-    height: 260px;
-    border-style: solid;
+.boxactivities2{
+    width: 410px;
+    height: 300px;
     margin-top: 10px;
-    
+    margin-left: 40px;
     margin-bottom: 20px;
     background-color: white;
     border-color: white;
     border-radius: 25px;
-    box-shadow: 5px 5px 5px 5px rgb(201, 201, 201); 
+    box-shadow: 5px 5px 5px 5px rgb(201, 201, 201);   
+    
 }
 
-.PhotosAct2 img{
+.boxactivities2 img{
     
-    width: 350px;
-    height: 200px;
-    position: relative;
-    margin-top: -4px;
-    margin-left: -4px;
-    margin-right: -4px;
+    width: 410px;
+    height: 230px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    object-fit: cover;
 }
 
-.PhotosAct3{
-    width: auto;
+.boxactivities3{
+    width: 410px;
+    height: 230px;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-color: white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px 5px rgb(201, 201, 201);   
+    
+}
+
+.boxactivities3 img{
+    
+    width: 410px;
+    height: 160px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+}
+
+
+.boxactivities4{
+    width: 410px;
+    height: 580px;
+       
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-color: white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px 5px rgb(201, 201, 201);   
+    
+}
+
+.boxactivities4 img{
+    
+    width: 410px;
+    height: 510px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+}
+
+.boxactivities5{
+    width: 410px;
+    height: 280px;
+       
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-color: white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px 5px rgb(201, 201, 201);   
+    
+}
+
+.boxactivities5 img{
+    
+    width: 410px;
+    height: 210px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+}
+.boxactivities6{
+    width: 410px;
+    height: 250px;
+       
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-color: white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px 5px rgb(201, 201, 201);   
+    
+}
+
+.boxactivities6 img{
+    
+    width: 410px;
     height: 180px;
-    border-style: solid;
-    margin-top: 10px;
-    
-    margin-bottom: 20px;
-    background-color: white;
-    border-color: white;
-    border-radius: 25px;
-    box-shadow: 5px 5px 5px 5px rgb(201, 201, 201); 
-}
-
-.PhotosAct3 img{
-    width: 350px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    position: relative;
-    margin-top: -4px;
-    margin-left: -4px;
-    margin-right: -4px;
+    object-fit: cover;
 }
 
+.boxactivities1:hover{
+    transform:scale(1.05);
+    transition: all 1s ease;
+}
+.boxactivities2:hover{
+    transform:scale(1.05);
+    transition: all 1s ease;
+}
+.boxactivities3:hover{
+    transform:scale(1.05);
+    transition: all 1s ease;
+}
+.boxactivities4:hover{
+    transform:scale(1.05);
+    transition: all 1s ease;
+}
+.boxactivities5:hover{
+    transform:scale(1.05);
+    transition: all 1s ease;
+}
+.boxactivities6:hover{
+    transform:scale(1.05);
+    transition: all 1s ease;
+}
+    
 
+
+
+
+
+
+
+/*-----footer comprenant 3 listes-----*/
+
+footer {
+
+    display: flex;
+    width: 100%;
+    height: 10%;
+    background: #f2f2f2;
+    margin-top: 40px;
+
+}
+
+footer h4{
+    margin-left: 30px;
+}
+
+footer li {
+
+    padding-top: 10px;
+    list-style-type: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer ul{
+    padding-left: 0px;
+    margin-left: 30px;
+    margin-right: 300px;
+    padding-right: 100px;
+}
