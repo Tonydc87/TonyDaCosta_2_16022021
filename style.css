@@ -170,19 +170,19 @@ header li{
     justify-content: center;
 }
 
-.filter .liste{
+.filter .filterselect{
     display: flex;
     flex-wrap: wrap; 
     margin-top: 40px;   
 }
 
-.liste{
+.filterselect{
     cursor: pointer;
     
     
 }
 
-.blockfiltre{
+.option{
     height: 50px;
     margin: 10px 20px 10px 5px;
     padding-right: 0px;
@@ -193,7 +193,7 @@ header li{
     align-items: center;
 }
 
-.blockfiltre i{
+.option i{
     color: #0065FC;
     display: flex;
     justify-content: center;
@@ -207,7 +207,7 @@ header li{
     position: relative;
 }
 
-.blockfiltre:hover{
+.option:hover{
     background-color:#0065FC;
     color: white;
     transition: all 1s;
@@ -221,7 +221,7 @@ header li{
 #Info i{
     font-size: 25px;
     color: white;
-    border: 3px solid #f2f2f2;
+    border: 2px solid #f2f2f2;
     border-radius: 100%;
     background-color:#0065FC ;
 }
@@ -241,7 +241,7 @@ header li{
     background-color: #F2F2F2;
     border-radius: 25px;
     height: auto;
-    width: 62%;
+    width: 65%;
     margin-top: 40px; 
      
 }
@@ -254,6 +254,7 @@ header li{
 }
 
 .searchresult, .annonce{
+    align-items: center;
     display: inline-block;
 }
 .annonce img{
@@ -277,7 +278,8 @@ header li{
     align-items: flex-start;
     border-style: solid;
     margin-top: 10px;
-    margin-left: 40px;
+    margin-left: 50px;
+    
     margin-bottom: 20px;
     background-color: white;
     border-color: white;
@@ -347,11 +349,12 @@ header li{
 #topselect{
     
     float: right;
-    width: 36%;
+    width: 33%;
     height: auto;
     align-items: center;
     margin-top: 40px;
     margin-right:0;
+    
     padding-bottom: 22px;
     color: black;
     background-color:#F2F2F2;
@@ -373,8 +376,8 @@ header li{
 }
 #Courbe{
     
-    width: 49px;
-    height: 49px;
+    width: 46x;
+    height: 46px;
     float: right;
     padding-right: 60px;
     padding-top: 35px;
@@ -385,7 +388,7 @@ header li{
 #topselect .annonce2{
    
     display: flex;
-    width: auto;
+    width: 80%;
     height: 185px;
     border-style: solid;
     margin: 20px 60px 30px 60px; 
@@ -422,15 +425,19 @@ header li{
 
 #topselect .description p{
 
-    padding-left: 15px;
-    padding-top: 15px;
+    padding: 15px 15px 30px 15px;
 }
 
 .note2{
-    padding-left: 15px;
-    position: static;
-    padding-top: 70px;     
+    margin-top: 20px;
+    padding: 0px 15px 5px 15px;
+    margin-bottom: 2px;
+
+    
+
 }
+
+
 #more, a {
     text-decoration: none;
 }
@@ -465,7 +472,7 @@ header li{
     padding-left: 20px;
 }
 
-.boxactivities1{
+.activities1{
     width: 410px;
     height: 580px;
     align-items: flex-start;    
@@ -480,7 +487,7 @@ header li{
     
 }
 
-.boxactivities1 img{
+.activities1 img{
     
     width: 410px;
     height: 510px;
@@ -489,7 +496,7 @@ header li{
     object-fit: cover;
 }
 
-.boxactivities2{
+.activities2{
     width: 410px;
     height: 300px;
     margin-top: 10px;
@@ -502,7 +509,7 @@ header li{
     
 }
 
-.boxactivities2 img{
+.activities2 img{
     
     width: 410px;
     height: 230px;
@@ -511,7 +518,7 @@ header li{
     object-fit: cover;
 }
 
-.boxactivities3{
+.activities3{
     width: 410px;
     height: 230px;
     margin-top: 50px;
@@ -524,7 +531,7 @@ header li{
     
 }
 
-.boxactivities3 img{
+.activities3 img{
     
     width: 410px;
     height: 160px;
@@ -534,7 +541,7 @@ header li{
 }
 
 
-.boxactivities4{
+.activities4{
     width: 410px;
     height: 580px;
        
@@ -549,7 +556,7 @@ header li{
     
 }
 
-.boxactivities4 img{
+.activities4 img{
     
     width: 410px;
     height: 510px;
@@ -558,7 +565,7 @@ header li{
     object-fit: cover;
 }
 
-.boxactivities5{
+.activities5{
     width: 410px;
     height: 280px;
        
@@ -572,7 +579,7 @@ header li{
     
 }
 
-.boxactivities5 img{
+.activities5 img{
     
     width: 410px;
     height: 210px;
@@ -580,7 +587,7 @@ header li{
     border-top-right-radius: 25px;
     object-fit: cover;
 }
-.boxactivities6{
+.activities6{
     width: 410px;
     height: 250px;
        
@@ -594,7 +601,7 @@ header li{
     
 }
 
-.boxactivities6 img{
+.activities6 img{
     
     width: 410px;
     height: 180px;
@@ -603,29 +610,31 @@ header li{
     object-fit: cover;
 }
 
-.boxactivities1:hover{
+.activities1:hover{
     transform:scale(1.05);
-    transition: all 1s ease;
+    transition: 1s ease-in;
+    transition: 1s ease-out;
+    
 }
-.boxactivities2:hover{
+.activities2:hover{
     transform:scale(1.05);
-    transition: all 1s ease;
+    transition: 1s ease;
 }
-.boxactivities3:hover{
+.activities3:hover{
     transform:scale(1.05);
-    transition: all 1s ease;
+    transition: 1s ease;
 }
-.boxactivities4:hover{
+.activities4:hover{
     transform:scale(1.05);
-    transition: all 1s ease;
+    transition: 1s ease;
 }
-.boxactivities5:hover{
+.activities5:hover{
     transform:scale(1.05);
-    transition: all 1s ease;
+    transition: 1s ease;
 }
-.boxactivities6:hover{
+.activities6:hover{
     transform:scale(1.05);
-    transition: all 1s ease;
+    transition: 1s ease;
 }
     
 
@@ -667,4 +676,109 @@ footer ul{
     margin-left: 30px;
     margin-right: 300px;
     padding-right: 100px;
+}
+
+/*----- Média Queries -----*/
+@media screen and (max-width: 1900px) {
+    .TopActivities .activities1{
+        margin: 0px 20px 0px 20px;
+        box-shadow: 0px 0px 10px 5px rgb(201, 201, 201); 
+    }
+    .TopActivities .activities2{
+        margin: 0px 20px 50px 20px;
+        box-shadow: 0px 0px 10px 5px rgb(201, 201, 201); 
+    }
+    .TopActivities .activities3{
+        margin: 0px 0px 0px 20px;
+        box-shadow: 0px 0px 10px 5px rgb(201, 201, 201); 
+    }
+    .TopActivities .activities4{
+        margin: 0px 20px 0px 20px;
+        box-shadow: 0px 0px 10px 5px rgb(201, 201, 201); 
+    }
+    .TopActivities .activities5{
+        margin: 0px 20px 50px 20px;
+        box-shadow: 0px 0px 10px 5px rgb(201, 201, 201); 
+    }
+    .TopActivities .activities6{
+        margin: 0px 0px 0px 20px;
+        box-shadow: 0px 0px 10px 5px rgb(201, 201, 201); 
+    }
+
+
+}
+
+
+@media screen and (max-width: 1850px) {
+
+    .register{
+        margin-right: 150px;
+    }
+    .searchresult{
+        width: 48%;    
+    }
+
+    
+    #topselect{
+      
+        width: 40%;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        margin-right: 100px;
+        padding-right: 80px;
+        
+    }
+    #topselect .annonce2{
+        margin-top: 50px;
+        margin-bottom: 50px ;
+    }
+
+    
+
+    #topselect h2{
+        padding-right: 0px;
+        margin-right: 20px;
+    }
+
+    .TopActivities .activities1{
+        margin: 0px;
+        box-shadow: 0px 0px 10px 5px rgb(201, 201, 201); 
+    }
+    .TopActivities .activities2{
+        margin: 0px 10px 50px 10px;
+        box-shadow: 0px 0px 10px 5px rgb(201, 201, 201); 
+    }
+    .TopActivities .activities3{
+        margin: 0px 0px 0px 10px;
+        box-shadow: 0px 0px 10px 5px rgb(201, 201, 201); 
+    }
+    .TopActivities .activities4{
+        margin: 0px;
+        box-shadow: 0px 0px 10px 5px rgb(201, 201, 201); 
+    }
+    .TopActivities .activities5{
+        margin: 0px 10px 50px 10px;
+        box-shadow: 0px 0px 10px 5px rgb(201, 201, 201); 
+    }
+    .TopActivities .activities6{
+        margin: 0px 0px 0px 10px;
+        box-shadow: 0px 0px 10px 5px rgb(201, 201, 201); 
+    }
+
+
+}
+@media screen and (max-width: 1675px) {
+    .searchresult{
+        width: 48%;
+        
+    }
+    #topselect{
+        float: right;
+        width: 40%;
+    }
+    #topselect h2{
+        padding-right: 0px;
+        margin-right: 20px;
+    }
+
 }
