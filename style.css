@@ -123,7 +123,7 @@ header li a:hover {
     font-size: 18px;
     font-family: "raleway";
     font-weight: bold;
-    opacity: none;
+    
     
 }
 .form button{
@@ -180,11 +180,7 @@ header li a:hover {
     
     
 }
-.form{
-    font-weight: bold;
-    opacity: none;
-    
-}
+   
 .option{
     height: 46px;
     margin: 10px 20px 10px 5px;
@@ -284,13 +280,12 @@ header li a:hover {
     width: 320px;
     height: 270px;
     align-items: flex-start;
-    border-style: solid;
+    border-style: hidden;
     padding-right: 6px;
     margin-top: 10px;
     margin-left: 50px;
     margin-bottom: 20px;
     background-color: white;
-    border-color: white;
     border-radius: 25px;
     box-shadow: 5px 5px 5px 5px rgb(201, 201, 201); 
     cursor: pointer;   
@@ -376,7 +371,7 @@ header li a:hover {
 }
 
 #Courbe{   
-    width: 46x;
+    width: 46px;
     height: 46px;
     float: right;
     padding-right: 60px;
@@ -388,10 +383,9 @@ header li a:hover {
     display: flex;
     width: 80%;
     height: 185px;
-    border-style: solid;
+    border-style: hidden;
     margin: 20px 60px 30px 60px; 
     background-color: white;
-    border-color: white;
     border-radius: 25px;
     box-shadow: 5px 5px 5px 5px rgb(201, 201, 201);
     cursor: pointer;  
@@ -468,7 +462,6 @@ header li a:hover {
     margin-right: 20px;
     margin-bottom: 20px;
     background-color: white;
-    border-color: white;
     border-radius: 25px;
     box-shadow: 5px 5px 5px 5px rgb(201, 201, 201);      
 }
@@ -488,7 +481,6 @@ header li a:hover {
     margin-left: 40px;
     margin-bottom: 20px;
     background-color: white;
-    border-color: white;
     border-radius: 25px;
     box-shadow: 5px 5px 5px 5px rgb(201, 201, 201);     
 }
@@ -508,7 +500,6 @@ header li a:hover {
     margin-left: 40px;
     margin-bottom: 20px;
     background-color: white;
-    border-color: white;
     border-radius: 25px;
     box-shadow: 5px 5px 5px 5px rgb(201, 201, 201);    
 }
@@ -529,7 +520,6 @@ header li a:hover {
     margin-right: 20px;
     margin-bottom: 20px;
     background-color: white;
-    border-color: white;
     border-radius: 25px;
     box-shadow: 5px 5px 5px 5px rgb(201, 201, 201);     
 }
@@ -549,7 +539,6 @@ header li a:hover {
     margin-left: 40px;
     margin-bottom: 20px;
     background-color: white;
-    border-color: white;
     border-radius: 25px;
     box-shadow: 5px 5px 5px 5px rgb(201, 201, 201);    
 }
@@ -569,7 +558,6 @@ header li a:hover {
     margin-left: 40px;
     margin-bottom: 20px;
     background-color: white;
-    border-color: white;
     border-radius: 25px;
     box-shadow: 5px 5px 5px 5px rgb(201, 201, 201);     
 }
@@ -1731,14 +1719,15 @@ footer h4 {
      #searchresult .annonce{
          margin-left: 20px;
      }
-     .activities1, .activities4{
+     .activities1, .activities4 {
         margin-left: 25px; 
+
     }
     
     .activities2, .activities3,
-    .activities5, .activities6{
-        margin: 10px 0px 25px 25px;
-    }
-    
-}
+    .activities5, .activities6 {
 
+        margin: 10px 0px 25px 25px;
+
+    }
+}
