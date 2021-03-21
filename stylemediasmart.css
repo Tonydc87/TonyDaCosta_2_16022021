@@ -491,6 +491,9 @@
         #topselect .annonce2 p{
             margin-left: 0px;
         }
+        #searchresult p{
+            margin-left: 0px;
+        }
     }
     @media screen and (max-width: 768px){
     
