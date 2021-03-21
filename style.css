@@ -34,8 +34,6 @@ body
     margin-right: 30px;
 }
 
-
-
 /*-----Header logo + menu navigation-----*/
 
 header {
@@ -53,6 +51,7 @@ header img{
 
 .menu{
     display: flex;  
+    margin-right: 30px;
 }
 
 header ul {
@@ -63,15 +62,15 @@ header ul {
 
 header li a{
     color: black;
+    text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 40px;
-    margin-right: 20px;
-   
-    
+    margin-right: 20px;   
 }
+
 header li a:hover {
     border-top: 4px solid #0065FC;
     padding-top: 40px;
@@ -227,12 +226,14 @@ header li a:hover {
 /*-----Resultat de recherche-----*/
 
 
+
 #searchresult{
     background-color: #F2F2F2;
     border-radius: 25px;
     height: auto;
-    width: 65%;
+    width: 60%;
     margin-top: 40px;  
+    margin-left: 30px;
 }
 
 #searchresult h2{
@@ -241,13 +242,12 @@ header li a:hover {
     margin-top: 0px;
 }
 
-#searchresult, .annonce{
-    align-items: center;
-    display: inline-block;
+#result{
+    margin: 0px 10px
+    
 }
+
 .annonce img{
-    padding-left: 3px;
-    padding-top: 3px;
     width: 100%;
     height: 180px;
     border-top-left-radius: 25px;
@@ -256,16 +256,13 @@ header li a:hover {
 }
 
 .annonce{  
-    width: 320px;
-    height: 270px;
-    align-items: flex-start;
+    display: inline-block;
+    margin : 10px 0px 20px 40px;
+    width: 28%;
+    height: auto;
     border-style: solid;
-    padding-right: 6px;
-    margin-top: 10px;
-    margin-left: 50px;
-    margin-bottom: 20px;
     background-color: white;
-    border-color: rgb(248, 248, 248);
+    border-color: rgb(250, 250, 250);
     border-radius: 25px;
     box-shadow: 5px 5px 5px 5px rgb(201, 201, 201); 
     cursor: pointer;   
@@ -276,38 +273,36 @@ header li a:hover {
     transition: all 1s ease;
 }
 
+.description{
+    padding-left: 15px;
+}
+
 .description h3{
     margin-top: 3px;
     margin-bottom: 5px;
-    padding-left: 15px;
 }
 
 .description p{
     margin-top: 0px;
     margin-bottom: 5px;
-    padding-left: 15px;
 }
 
 .description .EtoileBleu{
-    color: #0065FC  ;    
+    color: #0065FC;    
 }
 
 .description .EtoileGrise{
     color: #dfdfdf;   
 }
 
-.note{
-    padding-left: 15px;
-}
-
-#more{
-    display: flex;
-    justify-content: flex-start;
+#more a{
     font-size: 20px;
     color: black;
-    font-weight: bold;
+    text-decoration: none;
     padding-left: 40px;
-    padding-bottom: 25px;   
+}
+#more p{
+    margin-bottom: 43px;
 }
 
 #searchresult, #topselect{
@@ -319,24 +314,19 @@ header li a:hover {
 
 
 #topselect{   
-    width: 33%;
-    height: auto;
-    align-items: center;
-    margin-top: 15px;
-    margin-right:0;
-    margin-left: 10px;
-    padding-bottom: 15px;
+    width: 34%;
+    margin-right:0px;
+    margin-left: 40px;
+    padding-bottom: 25px;
     color: black;
     background-color:#F2F2F2;
     border-radius: 25px;
 }
 
 #topselect h2{
-    padding-top: 40px;
-    padding-left: 40px;
-    margin-top: 0px;
-    padding-right: 60px;
-    margin-right: 50px;
+    width: max-content;
+    padding: 33px 0px;
+    margin: 0px 0px 0px 30px;
 }
 
 #topselect h2, #courbe{
@@ -354,12 +344,11 @@ header li a:hover {
 
 #topselect .annonce2{   
     display: flex;
-    width: 80%;
-    height: 185px;
+    width: 85%;
+    margin:20px 0px 20px 40px;
     border-style: solid;
-    margin: 20px 60px 30px 60px; 
     background-color: white;
-    border-color: rgb(248, 248, 248);
+    border-color: rgb(250, 250, 250);
     border-radius: 25px;
     box-shadow: 5px 5px 5px 5px rgb(201, 201, 201);
     cursor: pointer;  
@@ -372,57 +361,43 @@ header li a:hover {
 }
 
 #topselect .annonce2 img{
-    width: 190px;
+    width: 40%;
     height: 180px;
-    margin-left: 3px;
-    margin-top: 3px;
-    margin-bottom: 5px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     object-fit: cover;
 }
-
-#topselect .description h3{  
-    padding-left: 15px;
-    padding-top: 10px;
+#topselect .description{
+    width: 50%;
 }
-
-#topselect .description p{
-    padding: 15px 15px 30px 15px;
+#topselect .description h3{
+    padding: 15px 0px;
 }
 
 .note2{
-    margin-top: 20px;
-    padding: 0px 15px 5px 15px;
-    margin-bottom: 2px;
+    padding-top: 30px;
 }
 
-#more, a {
-    text-decoration: none;
-    color: black;
-}
 
 
 /*----- Activité à Marseille -----*/
 
 
 #Activities{
-    height: auto;
-    width: 100%;
-    margin-top: 40px;   
+
+    margin: 40px 0px 0px 0px;
 }
 
 .result{
     display: flex;
     flex-wrap: wrap; 
-    cursor: pointer;         
+    cursor: pointer;       
 }
 
-#Activities, h2{
-    margin-left: 20px;
-    margin-top: 30px;
+#Activities h2{
+    margin-left: 30px;
     color: black; 
 }
 
@@ -431,125 +406,94 @@ header li a:hover {
 }
 
 .activities1{
-    width: 410px;
+    width: 25%;
     height: 580px;  
-    margin-top: 10px;
-    margin-left: 0px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    background-color:rgb(248, 248, 248);
-    border-color: white;
-    border-radius: 25px;
-    box-shadow: 5px 5px 5px 5px rgb(201, 201, 201);      
+    margin: 0px 40px 0px 10px;   
 }
 
 .activities1 img{
-    width: 410px;
+    width: 100%;
     height: 510px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    object-fit: cover;
+}
+
+#column2{
+    width: 21%;
 }
 
 .activities2{
-    width: 410px;
+    width: 100%;
     height: 300px;
-    margin-top: 10px;
-    margin-left: 40px;
-    margin-bottom: 20px;
-    background-color: white;
-    border-color: rgb(248, 248, 248);
-    border-radius: 25px;
-    box-shadow: 5px 5px 5px 5px rgb(201, 201, 201);     
+    margin: 0px 0px 50px 0px; 
 }
 
 .activities2 img{ 
-    width: 410px;
+    width: 100%;
     height: 230px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    object-fit: cover;
 }
 
 .activities3{
-    width: 410px;
+    width: 100%;
     height: 230px;
-    margin-top: 50px;
-    margin-left: 40px;
-    margin-bottom: 20px;
-    background-color: white;
-    border-color: rgb(248, 248, 248);;
-    border-radius: 25px;
-    box-shadow: 5px 5px 5px 5px rgb(201, 201, 201);    
+    margin: 0px; 
 }
 
 .activities3 img{
-    width: 410px;
+    width: 100%;
     height: 160px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    object-fit: cover;
 }
 
 .activities4{
-    width: 410px;
+    width: 25%;
     height: 580px;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    background-color: white;
-    border-color: rgb(248, 248, 248);;
-    border-radius: 25px;
-    box-shadow: 5px 5px 5px 5px rgb(201, 201, 201);     
+    margin: 0px 40px;   
 }
 
 .activities4 img{ 
-    width: 410px;
+    width: 100%;
     height: 510px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    object-fit: cover;
+}
+
+#column4{
+    width: 21%;
 }
 
 .activities5{
-    width: 410px;
+    width: 100%;
     height: 280px;
-    margin-top: 10px;
-    margin-left: 40px;
-    margin-bottom: 20px;
-    background-color: white;
-    border-color: rgb(248, 248, 248);;
-    border-radius: 25px;
-    box-shadow: 5px 5px 5px 5px rgb(201, 201, 201);    
+    margin: 0px 0px 50px 0px;
+  
 }
 
 .activities5 img{ 
-    width: 410px;
+    width: 100%;
     height: 210px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    object-fit: cover;
 }
 
 .activities6{
-    width: 410px;
+    width: 100%;
     height: 250px;
-    margin-top: 50px;
-    margin-left: 40px;
-    margin-bottom: 20px;
-    background-color: white;
-    border-color: rgb(248, 248, 248);
-    border-radius: 25px;
-    box-shadow: 5px 5px 5px 5px rgb(201, 201, 201);     
+    margin: 0px;
+    
 }
 
 .activities6 img{  
-    width: 410px;
+    width: 100%;
     height: 180px;
+}
+
+.activities1 img, .activities2 img, .activities3 img,
+.activities4 img, .activities5 img, .activities6 img{
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     object-fit: cover;
+}
+
+.activities1, .activities2, .activities3,
+.activities4, .activities5, .activities6{
+    background-color: white;
+    border-color: rgb(250, 250, 250);
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px 5px rgb(201, 201, 201); 
 }
 
 .activities1:hover, .activities2:hover, .activities3:hover,
@@ -565,7 +509,6 @@ header li a:hover {
 footer {
     display: flex;
     width: 100%;
-    height: 10%;
     background: #f2f2f2;
     margin-top: 40px;
 }
@@ -585,1163 +528,18 @@ footer a {
 }
 
 footer ul{
-    padding-left: 0px;
-    margin-left: 30px;
-    margin-right: 300px;
-    padding-right: 100px;
-}
-
-
-/*----- Média Queries -----*/
-
-@media screen and (max-width: 1440px){
-
-    body{
-        margin: 20px 0px 0px;
-    }
-
-/*header 1440px maquette */
-    
-    header{
-        margin: 0px 20px
-    }
-
-    .filter .option h3{
-        width: auto;
-        margin: 10px 20px;
-    }
-
-    h1{
-        margin-left: 20px;
-    }
-
-    .Container{
-        margin:0px;
-    }
-    .Container p{
-        margin-left: 20px;
-    }
-
-    .menu{
-        padding-right: 30px;
-    }
-
-    .form{
-        margin-left: 20px;
-    }
-
-    #Info{
-        margin-left: 20px;
-    }
-
-/*selection 1440px maquette*/
-
-    #selection{
-        margin-left: 0px;
-    }
-
-    #searchresult{
-        width: 63%;
-        margin-left: 20px;
-    }
-
-    #searchresult h2{
-        font-size: 21px ;
-        margin-left: 30px;
-    }
-
-    #searchresult h3{
-        font-size: 16px;
-    }
-
-    #searchresult p{
-        font-size: 13px;
-    }
-
-    .annonce{
-        width: 27%;
-        height: 200px;
-        margin-left: 30px;
-    }
-
-    .annonce img{
-        height: 130px;
-    }
-
-    .note{
-        font-size: 11px;
-    }
-
-/*aside top select 1440px maquette*/
-
-    #topselect{
-        margin-top: 0px;
-        padding-top: 5px;
-        padding-bottom: 42px;
-    }
-
-    #topselect h2{
-        font-size: 21px;
-        padding: 12px 0px 5px 10px;
-        margin: 20px 0px 8px 10px;
-    }
-
-    #topselect h3{
-        font-size: 16px;
-    }
-
-    #topselect p{
-        font-size: 13px;
-    }
-    #topselect .annonce2{
-        width: 90%;
-        height: 150px;
-        margin: 15px 20px 0px 20px;
-    }
-    #topselect .annonce2 img{
-        height: 100%;
-        margin: 0px;
-    }
-    #Courbe{
-        padding-top: 30px;
-    }
-    #topselect .annonce2 p{
-        padding-bottom: 20px;
-    }
-    .note2{
-        font-size: 11px;
-        margin-top: 0px;
-        padding-top: 15px;
-    }
-
-    #more p{
-        font-size: 16px;}
-
-/*Activities 1440px maquette*/
-
-    #Activities{
-        margin-left: 0px;
-    }
-
-    #Activities h2{
-        font-size: 21px;
-        margin-left: 30px;
-    }
-
-    #Activities h3{
-        font-size: 16px;
-        margin-top: 10px;
-    }
-
-    .activities1{
-        width: 23%;
-        height: 500px; 
-        margin: 0px 0px 0px 20px; 
-    }
-
-    #column2{
-        width: 22%;
-        padding: 0px 20px;
-    }
-
-    .activities2, .activities5 {
-        width: 100%;
-        height: 230px;
-        margin: 0px;  
-    }
-
-    .activities3, .activities6{
-        width: 100%;
-        height: 230px;
-        margin: 39px 0px 0px 0px;   
-    }
-
-    .activities4{
-        width: 25%;
-        height: 500px; 
-        margin: 0px;   
-    }
-
-    #column4{
-        width: 22%;
-        padding: 0px 0px 0px 20px;
-    }
-
-    .activities1 img, .activities4 img{   
-        width: 100%;
-        height: 450px;  
-    }
-    .activities2 img, .activities3 img, 
-    .activities5 img, .activities6 img {  
-        width: 100%;
-        height: 180px;   
-    }
-    
-/*footer 1440px maquette*/
-
-    .about{
-        margin-left: 10px;
-        width: 34%;
-        padding-bottom: 10px;
-    }
-
-    .conditions, .assistance{
-        width: 33%;
-    }
-
-    footer h4{
-        width: 90%;
-        margin-left: 10px;
-    }
-
-    footer ul{
-        width: 90%;
-        margin: 0px 0px 0px 10px;
-        padding: 0px;
-    }
-
-@media screen and (max-width: 1024px){
-    
-body{
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-/*header + menu nav 1024px ipad pro*/
-
-header{
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-header .menu{
-    padding-right: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    
-}
-header {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: center;
-  }
-
-header img{ 
-    position: absolute;
-    top: 15px; left: 10px;
-    height: 80px;
-    width: 200px;
-}
-
-.register{
-    font-size: 23px;
-    position: absolute;
-    top: 25px; right: 25px;
-}
-
-header .menu{
-    width: 100%;
-}
-
-.menu nav{  
-    width: 100%;
-    margin-top: 60px;
-}
-
-nav{
-    width: 100%;
-    padding-top: 20px;
-}
-
-
-nav ul{    
-    padding-left: 0px;
-}
-
-.menu li{   
-    width: 50%;
-    text-align: center;
-    padding-bottom: 20px;
-    border-bottom: solid;
-    border-color:#F2F2F2 ;
-}
-
-.menu li a{
-    font-size: 23px;
-    width: 100%;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding-right: 0px;
-    text-align: center;    
-}
-
-header li a:hover {
-    border-top: none;
-    padding-top: 0px;
-    transition: none;   
-}
-
-header li:hover{
-    border-bottom: 4px solid #0065FC;
-    color: #0065FC;   
-}
-
-/* menu de recherche 1024px ipad pro */
-
-h1{
-    font-size: 20px ;
-    width: 90%;
-    margin-top: 30px;
-    margin-bottom: 30px;     
-}
-
-#housing{
-    width: 100%;
-}
-
-.Container{
-    width: 100%;
-}
-
-.Container p{ 
-    font-size: 15px;
-}
-
-.filter{
-    width: 100%;
-    margin-top: 0px;
-    margin-left: 0px;
-}
-
-.filter h2{
-    font-size: 22px;
-}
-
-.filter .option{
-    margin : 0px 10px 10px
-}
-
-.filterselect h3{
-    font-size: 16px;
-}
-
-.form{ 
-    margin-top: 40px;  
-}
-
-#search{
-    font-size: 16px;
-}
-
-button span{
-    font-size: 16px;
-}
-
-#Info{
-    font-size: 15px;
-    padding-bottom: 20px;
-}
-
-/* Resultat Topselect 1024px ipad pro*/
-
-#selection{
-    display: flex;
-    flex-direction: column-reverse;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-#topselect{
-    width: 100%;
-    margin-left: 0px;
-    padding-bottom: 30px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px; 
-    float: none;
-}
-
-#topselect h2{ 
-    padding: 0px;
-    margin: 40px 0px 0px 80px;
-}
-
-#Courbe{
-    font-size: 22px;
-    padding-top: 40px;
-    margin-right: 80px;
-}
-
-#topselect .annonce2{
-    width: 78%;
-    height: 250px;
-    margin: 40px 0px 40px 100px;   
-}
-
-#topselect .annonce2 img{
-    width: 45%;
-    height: auto;
-}
-
-#topselect .annonce2 h3{
-    font-size: 19px;
-    padding: 20px 0px 0px 15px;
-}
-
-#topselect .annonce2 h3 br{
-    display: none;
-}
-
-#topselect .annonce2 p{
-    font-size: 15px;
-    padding: 50px 0px 50px 15px;
-}
-
-#topselect .annonce2:hover{
-    transform:none;
-}
-
-.note2{
-    font-size: 15px;
-    padding-top: 20px;
-}
-
-/*Resultat de recherche 1024px ipad pro*/
-
-#searchresult{
-    width: 100%;
-    background-color: white;
-    margin-left: 0px;  
-}
-
-#searchresult h2{
-    font-size: 21px;
-    margin-bottom: 10px;
-    margin-left: 40px;
-}
-
-#searchresult h3{
-    font-size: 19px;
-}
-
-#searchresult p{
-    font-size: 15px;
-}
-
-#searchresult .annonce{
-    margin : 30px 15px 30px 20px;
-    width: 45%;
-    height: 300px;
-    padding-right: 1px;
-}
-
-#searchresult .annonce img{
-    width: 100%;
-    height: 200px;
-    padding-left: 0px;
-    margin-left: 0px;
-}
-
-#searchresult .result{
-    margin-left: 0px;
-}
-
-.annonce:hover{
-    transform:none;
-}
-
-.note{
-    font-size: 13px ;
-    padding-top: 10px;
-}
-
-#more{
-    margin-left: 40px;
-    padding-left: 0px;
-}
-
-/*Resultat recherche > Activités 1024px ipad pro*/
-
-#Activities .result{
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-#Activities h2{
-    margin-left: 50px;
-    margin-bottom: 20px;
-}
-
-#Activities h3{
-    margin-top: 15px;
-}
-
-.activities1, .activities4{
-    width: 45%;
-    margin-top: 20px;
-    margin-left: 30px;
-    box-shadow: 0px 0px 5px 0px rgb(201, 201, 201);   
-}
-
-#column2, #column4{
-    width: 45%;
-    margin-top: 20px;
-    margin-left: 30px;
-    padding: 0px;
-}
-
-.activities2, .activities3, .activities5, .activities6{
-    width: 100%;
-    margin-right: 0px;  
-    box-shadow: 0px 0px 5px 0px rgb(201, 201, 201);
-}
-
-.activities2, .activities5{
-    height: 250px;
-    margin-right: 0px;
-}
-
-.activities2 img, .activities5 img{
-    height: 200px;
-}
-
-.activities3, .activities6{
-    height: 237px;
-    margin-top: 10px;
-    margin-right: 0px;
-}
-
-.activities3 img, .activities6 img{
-    height: 190px;
-}
-
-.activities1:hover, .activities2:hover, .activities3:hover,
-.activities4:hover, .activities5:hover, .activities6:hover {
-    transform:none;  
-}
-
-/*footer 1024px ipad pro*/
-
-footer{
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-footer h4{
-    padding-top: 10px;
-    margin-left: 0px;
-}
-
-.about, .conditions, .assistance{
-    width: 33%;
-    margin-left: 10px;
-}
-
-footer ul{
-    width: 100%;
-}
-
-footer li{
-    padding:0px;
-    margin-top: 10px;
-}
-
-footer ul{
-    padding-left: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-right: 0px;
-}
-}
-
-@media screen and (max-width: 768px){
-
-/*header + menu nav 768px ipad*/
-
-    .register{
-        font-size: 22px;
-        top: 20px; right: 20px;
-    }
-
-    .menu li a{
-        font-size: 22px;
-    }
-
-/* menu de recherche 768px ipad */
-
-
-    .filter{
-        flex-wrap: wrap;
-        width: 100%;
-        margin-top: 0px;
-        margin-left: 10px;
-    }
-
-    .filter h2{
-        font-size: 22px;
-        margin: 20px 0px 10px 20px;
-        padding-top: 0px;
-    }
-
-    .filter .option{
-        margin : 0px 5px 5px
-    }
-
-    .filter .option h3{
-        margin-left: 5px;
-    }
-
-    .filter .filterselect {
-        margin-top: 10px;
-    }
-
-    .form{ 
-        margin-top: 20px;  
-    }
-
-/* Resultat Topselect 768px ipad*/
-
-    #topselect h2{ 
-        font-size: 23px;        
-        padding: 0px;
-        margin: 40px 0px 0px 60px;
-    }
-
-    #Courbe{
-        font-size: 23px;
-       margin-right: 40px;
-       padding-right: 25px;
-    }
-
-    #topselect .annonce2{
-        width: 85%;
-        height: 250px;
-        margin: 40px 0px 40px 50px;   
-    }
-
-    #topselect .annonce2 h3{
-        font-size: 20px;
-        padding: 20px 0px 0px 15px;
-    }
-
-    #topselect .annonce2 img{
-        width: 40%;
-        height: auto;
-    }
-    
-    #topselect .annonce2 h3 br{
-        display: none;
-    }
-    
-    #topselect .annonce2 p{
-        font-size: 18px;
-        padding: 50px 0px 50px 15px;
-    }
-    
-    .note2{
-        font-size: 17px;
-        padding-top: 20px;
-    }
-
-    /*Resultat de recherche 768px ipad*/
-
-    #searchresult h2{
-        font-size: 23px;
-        margin-left: 30px;
-    }
-    
-    #searchresult h3{
-        font-size: 20px;
-    }
-    
-    #searchresult p{
-        font-size: 18px;
-    }
-    
-    #searchresult .annonce{
-        margin : 20px 0px 20px 15px;
-        width: 95%;
-        height: 300px;
-        padding-right: 0px;
-    }
-    
-    #searchresult .annonce img{
-        width: 100%;
-        height: 200px;
-        margin: 0px ;
-        padding: 0px;
-    }
-    
-    #more{
-        margin-left: 40px;
-        padding-left: 0px;
-    }
-
-    /*Resultat recherche > Activités 768px ipad*/
-
-    #Activities h2{
-        font-size: 23px;
-    }
-    
-    #Activities h3{
-        font-size: 20px;
-        margin-top: 10px;
-    }
-    
-    .activities1, .activities4{
-        width: 95%;
-        height: 300px;
-        margin-top: 15px;
-        margin-left: 15px; 
-    }
-
-    .activities1 img, .activities4 img{
-        height: 250px;
-    }
-    
-    #column2, #column4{
-        width: 100%;
-        margin-top: 20px;
-        margin-left: 0px;
-        padding: 0px;
-    }
-    
-    .activities2, .activities5{
-        width: 95%;
-        height: 300px;
-        margin-left: 15pX;
-        margin-right: 0px;
-    }
-    
-    .activities2 img, .activities5 img{
-        height: 250px;
-    }
-    
-    .activities3, .activities6{
-        width: 95%;
-        height: 300px;
-        margin-top: 20px;
-        margin-left: 15px;
-        margin-right: 0px;
-    }
-    
-    .activities3 img, .activities6 img{
-        height: 250px;
-    }
-
-    .about{
-        padding-bottom: 20px;
-} 
-}         
-
-
-/*----- MEDIA SMARTPHONE 6 7 8 Plus -----*/
-
-@media screen and (max-width: 414px){
-
-
-/*header + menu nav 414px*/
-
-.register{
-    font-size: 20px;
-    top: 15px; right: 20px;
-}
-
-.menu li a{
-    font-size: 20px; 
-}
-
-header img{
-    width: 120px;
-    height: 50px;
-    padding-top: 0px;
-}
-
-nav{
-    margin-top: 30px;
-    padding-top: 0px;
-}
-
-/* menu de recherche 414px */
-
-.Container{
-    width: 100%;
-    margin:0px
-}
-
-h1{
-    font-size: 20px;
-    margin-left: 30px;
-    margin-top: 10px;
-    padding-left: 0px;
-    width: 70%;
-}
-
-.Container p{
-    font-size: 15px;
-    padding-left: 30px;
-}
-
-.form{
-    width: 80%;
-    margin-left: 40px;   
-}
-
-.form button{
-    display: flex;
-    width:55px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-style: hidden;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;   
-}
-
-#search{
-    font-size: 16px;
-    padding-left: 20px;
-    margin-right: -20px;
-}
-
-button span{
-    font-size: 16px;
-}
-
-.form span{
-    display: none;
-}
-
-.logo_search i{
-    display: flex;
-}
-
-.filter{
-    width: 100%;
-    margin-right: 0px;
-    margin-left: 0px;
-}
-
-.filter h2{
-    width: 90%;
-    font-size: 18px;
-    margin-left: 30px;
-}
-
-.filter .filterselect h3{
-    font-size: 14px;
-    margin: 10px 17px;
-}
-
-.filter .filterselect .option{
-    width: auto;
-    margin-left: 0px;
-}
-
-.filterselect{
-    margin-left: 30px;
-    width: 80%;
-}
-
-#Info{
-    width: 80%;
-    font-size: 15px;
-    padding-left: 30px;
-}
-
-#Info i{
-    height: 100%;
-    color: white;
-    border: 0px solid rgb(243, 229, 229);
-    border-radius: 100%;
-    background-color:#0065FC ;
-}
-
-.Container p{
-    margin-left: 0px;
-}
-
-.Container #Info{
-    display: flex;
-    margin-left: 0px;
-}
-
-#Info span{
-    width: 90%;
-}
-
-/* Resultat Topselect 414px*/
-
-#selection{
-    width: 100%;
-}
-#topselect{
-    width: 100%;
-}
-
-#topselect h2{
-    font-size: 19px;
-    margin-left: 20px;
-}
-
-#Courbe{
-    font-size: 18px;
-    margin-right: 0px;
-    padding-top: 40px;
-    padding-right: 30px;
-}
-
-#topselect .annonce2{
-    width: 93%;
-    height: 180px;
-    margin-left: 10px;
-    box-shadow: 0px 0px 10px 0px rgb(201, 201, 201);   
-}
-
-#topselect .annonce2 img{
-    width: 40%;
-}
-
-#topselect .annonce2 h3{
-    font-size: 17px;
-    padding-left: 10px;
-    width: 90%;
-}
-
-#topselect .annonce2 p{
-    font-size: 15px;
-    padding: 20px 0px 20px 10px;
-    width: 90%;
-}
-.note2{
-    font-size: 13px;
-    padding-left: 10px;
-}
-
- /*Resultat de recherche 414px*/
-
-#searchresult h2{
-    font-size: 19px;
-    padding-top: 10px;
-    margin-left: 20px;
-}
-
-#searchresult h3{
-    font-size: 17px;
-}
-
-#searchresult p{
-    font-size: 17px;
-}
-.note{
-    font-size: 13px;
-    padding-top: 0px;
-}
-#searchresult .annonce{
-    width: 85%;
-    height: 200px;
-    margin-left: 27px;
-    box-shadow: 0px 0px 10px 0px rgb(201, 201, 201);  
-}
-
-#searchresult .annonce img{
-    height: 125px;
-}
-
-#searchresult #more{
    
-    margin-left: 30px;
-    padding-left: 0px;    
 }
 
-/*Resultat recherche > Activités 414px*/
-
-#Activities{
-    width: 100%;
+.about{
+    width: 33%;
 }
 
-#Activities h2{
-    font-size: 19px;
-    padding-bottom: 10px;
-    margin-left: 30px;
+.conditions{
+    width: 33%;
 }
 
-#Activities h3{
-    font-size: 17px;
-    margin-top: 15px;
-}
-
-.activities1, .activities4{
-    width: 85%;
-    height: 200px;
-    margin-top: 0px;
-    margin-left: 30px; 
-}
-
-.activities1 img, .activities4 img{
-    height: 150px;
-}
-
-#column2, #column4{
-    width: 100%;
-    margin-top: 20px;
-    margin-right:0px ;
-    margin-left: 0px;
-    padding: 0px;
-}
-
-.activities2, .activities3{
-    width: 85%;
-    height: 200px;
-    margin: 10px 0px 25px 30px;
-}
-
-.activities2 img, .activities5 img{
-    height: 150px;
-}
-
-.activities5, .activities6{
-    width: 85%;
-    height: 200px;
-    margin: 10px 0px 25px 30px;
-}
-
-.activities3 img, .activities6 img{
-    height: 150px;
-}
-
-/*footer 414 px*/
-
-footer{
-    display: block;
-    width: 100%;
-    padding-top: 10px;
-    margin-left: 0px;
-  
-}
-
-footer h4 {
-    
-    font-size: 18px;
-    margin: 20px 0px 20px 30px;
-}
-
-
-.about, .conditions, .assistance{
-    width: 90%;
-}
-
-.about li, .conditions li, .assistance li{
-    padding-left: 30px;
-    margin-bottom: 10px;
-    font-size: 15px;
-}
-.assistance li{
-    margin-bottom: 0px;
-    margin-top: 10px;
-}
 .assistance{
-    padding-top: 10px;
-    padding-bottom: 30px;
+    width: 33%;
 }
 
-}
-@media screen and (max-width: 375px){
-
-    .form{
-        margin-left: 30px;
-        width: 85%;
-    }
-
-    .filterselect{
-        width: 100%;
-    }
-}
-        
-@media screen and (max-width: 320px){
-        
-    .register{
-        font-size: 16px;
-        top: 15px; right: 20px;
-    }
-    
-    .menu li a{
-        font-size: 16px;
-    }
-    
-    .Container p{
-        font-size: 13px;
-    }
-
-    h1{
-        width: 80%;
-        font-size: 17px;
-    }
-
-    #search{
-        padding-left: 10px;
-    }
-
-    .form{
-        margin-left: 20px;
-    }
-
-    .filter h2{
-        font-size: 18px;
-    }
-
-    #Info{
-        font-size: 13px;
-    }
-
-    .filter .option h3{
-        font-size: 13px;
-        margin-left: 8px;
-    }
-
-    .filter{
-        width: 100%;
-    }
-
-    .filterselect{
-        margin-left: 10px;
-    }
-    
-    #Courbe i{
-        font-size: 20px;
-    }
-
-    #topselect .annonce2{
-        margin-left: 7px;
-    }
-    
-    #topselect .annonce2 h3, p{
-        font-size: 14px;
-    }
-
-     #topselect .annonce2 .note2{
-        margin-top: 10px;
-        padding-right: 5px;
-    }
-
-     #topselect .annonce2 img{
-          width: 45%;
-    }
-
-     #searchresult .annonce{
-         margin-left: 20px;
-    }
-
-     .activities1, .activities4{
-        margin-left: 25px; 
-    }
-    
-    .activities2, .activities3,
-    .activities5, .activities6{
-        margin: 10px 0px 25px 25px;
-    }
-}
