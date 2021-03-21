@@ -3,7 +3,9 @@
     
     /*///////////HEADER///////////*/
     
-    
+    body{
+        margin: 20px 0px 0px 0px;
+    }
     header .menu{
         padding-right: 0px;
         margin-left: 0px;
@@ -405,7 +407,7 @@
         }
     }
 
-    @media screen and (max-width: 900px){
+    @media screen and (max-width: 915px){
 
             .register{
                 font-size: 22px;
@@ -485,6 +487,9 @@
             width: max-content;
             margin-left: auto;
             margin-right: auto;
+        }
+        #topselect .annonce2 p{
+            margin-left: 0px;
         }
     }
     @media screen and (max-width: 768px){
@@ -593,7 +598,21 @@
             padding-bottom: 20px;
     } 
     }         
+@media screen and (max-width: 710px){
     
+    #topselect .annonce2{
+        height: 200px;
+    }
+    #topselect .annonce2 p{
+        padding: 20px 15px;
+    }
+    #topselect .annonce2 h3{
+        width: 80%;
+    }
+    .note2{
+        padding-top: 30px;
+    }
+}   
         
 @media screen and (max-width: 550px){
 
@@ -690,6 +709,10 @@
             padding-bottom: 30px;
         }
             
+    }
+    @media screen and (max-width: 529px){
+        #topselect .annonce2 h3{
+            width: 100%;
     }
 
     @media screen and (max-width: 440px){
