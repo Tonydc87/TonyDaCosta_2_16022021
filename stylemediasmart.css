@@ -1,7 +1,9 @@
+/*///////////RESPONSIVE MQ TABLETTE ET SMARTPHONE///////////*/
+
 @media screen and (max-width: 1024px){
     
     
-    /*///////////HEADER///////////*/
+/*//////////////HEADER//////////////*/
     
     body{
         margin: 20px 0px 0px 0px;
@@ -82,8 +84,9 @@
         border-bottom: 4px solid #0065FC;
         color: #0065FC;   
     }
+
     
-    /*///////////MENU///////////*/
+/*//////////////MENU//////////////*/
     
     h1{
         font-size: 20px ;
@@ -137,7 +140,7 @@
         padding-bottom: 20px;
     }
     
-    /*///////////TOPSELECT///////////*/
+/*//////////////ASIDE TOPSELECT//////////////*/
     
     #selection{
         display: flex;
@@ -207,7 +210,7 @@
 
     }
     
-    /*///////////SEARCHRESULT///////////*/
+/*//////////////SECTION RESULTAT DE RECHERCHE//////////////*/
     
     #searchresult{
         width: 100%;
@@ -261,7 +264,7 @@
         padding-left: 0px;
     }
     
-    /*///////////ACTIVITIES///////////*/
+/*//////////////SECTION ACTIVITIES//////////////*/
     
     #Activities .result{
         width: 100%;
@@ -331,7 +334,7 @@
         transform:none;  
     }
     
-    /*///////////FOOTER///////////*/
+/*//////////////HEADER//////////////*/
     
     footer{
         width: 100%;

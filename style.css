@@ -34,7 +34,7 @@ body
     margin-right: 30px;
 }
 
-/*-----Header logo + menu navigation-----*/
+/*///////////HEADER///////////*/
 
 header {
     margin-left: 30px;
@@ -88,7 +88,7 @@ header li a:hover {
 
 
 
-/*-----Header barre de recherche-----*/
+/*///////////SECTION DE RECHERCHE///////////*/
 
 .form{
     margin-top: 10px;
@@ -223,7 +223,7 @@ header li a:hover {
 }
 
 
-/*-----Resultat de recherche-----*/
+/*///////////SECTION RESULTAT DE RECHERCHE///////////*/
 
 
 
@@ -310,7 +310,7 @@ header li a:hover {
 }
 
 
-/*-----aside pop-----*/
+/*///////////ASIDE SECTION DE RECHERCHE///////////*/
 
 
 #topselect{   
@@ -382,7 +382,7 @@ header li a:hover {
 
 
 
-/*----- Activité à Marseille -----*/
+/*///////////SECTION ACTIVITES///////////*/
 
 
 #Activities{
@@ -504,7 +504,7 @@ header li a:hover {
 }
 
 
-/*-----footer comprenant 3 listes-----*/
+/*///////////FOOTER///////////*/
 
 footer {
     display: flex;
