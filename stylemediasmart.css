@@ -886,10 +886,12 @@
         margin-left: auto;
         margin-right: auto;
     }
+    
+    .filter .filterselect{
+        width: 100%;
+    }
 
     .filter .option h3{
-        margin-left: auto;
-        margin-right: auto;
         font-size: 15px;
     }
 
@@ -924,10 +926,6 @@
     }
     .register{
         font-size: 18px;
-    }
-
-    .filter .filterselect{
-        width: 100%;
     }
 
     #topselect .description{
