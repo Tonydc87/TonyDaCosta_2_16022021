@@ -369,238 +369,236 @@
         margin-right: 0px;
         padding-right: 0px;
     }
+}
 
-
-    }
-    @media screen and (max-width: 950px){
+@media screen and (max-width: 950px){
         
-        .filter{
-            flex-wrap: wrap;
-            width: 100%;
-            margin-top: 30px;
-            
-        }
-        .filter h2{
-            font-size: 22px;
-            margin: 20px 0px 10px 0px;
-            padding-top: 0px;
-        }
-    
-        .filter .option{
-            margin : 0px 5px 5px
-        }
-    
-        .filter .option h3{
-            margin-left: 5px;
-        }
-    
-        .filter .filterselect {
-            margin-top: 10px;
-        }
-
-        #result{
-            margin-right: 0px;
-        }
-    
-        .form{ 
-            margin-top: 20px;  
-        }
+    .filter{
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 30px;  
     }
+
+    .filter h2{
+        font-size: 22px;
+        margin: 20px 0px 10px 0px;
+        padding-top: 0px;
+    }
+    
+    .filter .option{
+        margin : 0px 5px 5px
+    }
+    
+    .filter .option h3{
+        margin-left: 5px;
+    }
+    
+    .filter .filterselect {
+        margin-top: 10px;
+    }
+
+    #result{
+        margin-right: 0px;
+    }
+    
+    .form{ 
+        margin-top: 20px;  
+    }
+}
 
     @media screen and (max-width: 915px){
 
-            .register{
-                font-size: 22px;
-                top: 20px; right: 20px;
-            }
-
-            #Courbe{
-                padding-right: 0px;
-                margin-right: 60px;
-            }
-        
-            .menu li a{
-                font-size: 22px;
-            } 
-        
-            .filter h2{
-                font-size: 22px;
-            }   
-
-            #searchresult .annonce{ 
-                
-                margin: 20px 0px 20px 20px;
-            }
-
-            #column2, #column4{
-                margin-left: 15px;
-            }
-
-     }
-     @media screen and (max-width: 881px){
-         .note2{
-             padding-top: 0px;
-         }
-     }
-    @media screen and (max-width: 805px){
-        .Container{
-            margin: 0px;
-        }
-
-        .filter{
-            display: initial;
-        }
-        
-        .filter .option{
-            margin-left: 5px
-        }
-
-        .form{
-            margin-left: auto;
-            margin-right: auto;
-           width: 60%;
-        }
-
-        .Container h1, p{
-            width: max-content;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .form button{
-            width: 120px;
-        }
-
-        #search{
-            width: 70%;
-        }
-
-        .filter h2{
-            width: max-content;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            margin-left: auto;
-            margin-right: auto;
-           
-        }
-        .filterselect .option{
-            width: max-content;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        #topselect .annonce2 p{
-            margin-left: 0px;
-        }
-        #searchresult p{
-            margin-left: 0px;
-        }
+    .register{
+        font-size: 22px;
+        top: 20px; right: 20px;
     }
+
+    #Courbe{
+        padding-right: 0px;
+        margin-right: 60px;
+    }
+        
+    .menu li a{
+        font-size: 22px;
+    } 
+        
+    .filter h2{
+        font-size: 22px;
+    }   
+
+    #searchresult .annonce{       
+        margin: 20px 0px 20px 20px;
+    }
+
+    #column2, #column4{
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 881px){
+
+    .note2{
+        padding-top: 0px;
+    }
+}
+@media screen and (max-width: 805px){
+
+    .Container{
+        margin: 0px;
+    }
+
+    .filter{
+        display: initial;
+    }
+        
+    .filter .option{
+        margin-left: 5px
+    }
+
+    .form{
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+
+    .Container h1, p{
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form button{
+        width: 120px;
+    }
+
+    #search{
+        width: 70%;
+    }
+
+    .filter h2{
+        width: max-content;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;    
+    }
+
+    .filterselect .option{
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #topselect .annonce2 p{
+        margin-left: 0px;
+    }
+    #searchresult p{
+        margin-left: 0px;
+    }
+}
     @media screen and (max-width: 768px){
     
-         /*Resultat de recherche 768px ipad*/
-        #topselect .annonce2 p{
-            margin-left: 0px;
-        }
-         #searchresult h2{
-            font-size: 20px;
-           
-        }
-        
-        #searchresult h3{
-            font-size: 18px;
-        }
-        
-        #searchresult p{
-            font-size: 17px;
-            margin-left: 0px;
-        }
-        
-        #searchresult .annonce{
-            display: flex;
-            flex-wrap: wrap;
-            margin-left: auto;
-            margin-right: auto;
-            width: 90%;
-            height: 300px;
-            margin-top: 30px;
-            padding-right: 0px;
-        }
+    #topselect .annonce2 p{
+        margin-left: 0px;
+    }
 
-        .description{
-            width: 100%;
-        }
+    #searchresult h2{
+        font-size: 20px;
+    }
         
-        #searchresult .annonce img{
-            width: 100%;
-            height: 200px;
-        }
+    #searchresult h3{
+        font-size: 18px;
+    }
+        
+    #searchresult p{
+        font-size: 17px;
+        margin-left: 0px;
+    }
+        
+    #searchresult .annonce{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 300px;
+        margin-top: 30px;
+        padding-right: 0px;
+    }
+
+    .description{
+        width: 100%;
+    }
+        
+    #searchresult .annonce img{
+        width: 100%;
+        height: 200px;
+    }
             
         
-        #more{
-            margin-left: 40px;
-            padding-left: 0px;
-        }
+    #more{
+        margin-left: 40px;
+        padding-left: 0px;
+    }
 
-        #Courbe{
-            margin-right: 50px;
-        }
-
-        /*Resultat recherche > Activités 768px ipad*/
+    #Courbe{
+        margin-right: 50px;
+    }
     
-        #Activities h2{
-            font-size: 20px;
-        }
+    #Activities h2{
+        font-size: 20px;
+    }
         
-        #Activities h3{
-            font-size: 18px;
-            margin-top: 10px;
-        }
+    #Activities h3{
+        font-size: 18px;
+        margin-top: 10px;
+    }
         
-        .activities1, .activities4{
-            width: 95%;
-            height: 300px;
-            margin-top: 15px;
-            margin-left: 15px; 
-        }
+    .activities1, .activities4{
+        width: 95%;
+        height: 300px;
+        margin-top: 15px;
+        margin-left: 15px; 
+    }
     
-        .activities1 img, .activities4 img{
-            height: 250px;
-        }
+    .activities1 img, .activities4 img{
+        height: 250px;
+    }
         
-        #column2, #column4{
-            width: 95%;
-            margin-top: 20px;
-            margin-left: 0px;
-            padding: 0px;
-        }
+    #column2, #column4{
+        width: 95%;
+        margin-top: 20px;
+        margin-left: 0px;
+        padding: 0px;
+    }
         
-        .activities2, .activities5{
-            width: 100%;
-            height: 300px;
-            margin-left: 15pX;
-            margin-right: 0px;
-        }
+    .activities2, .activities5{
+        width: 100%;
+        height: 300px;
+        margin-left: 15pX;
+        margin-right: 0px;
+    }
         
-        .activities2 img, .activities5 img{
-            height: 250px;
-        }
+    .activities2 img, .activities5 img{
+        height: 250px;
+    }
         
-        .activities3, .activities6{
-            width: 100%;
-            height: 300px;
-            margin-top: 20px;
-            margin-left: 15px;
-            margin-right: 0px;
-        }
+    .activities3, .activities6{
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-right: 0px;
+    }
         
-        .activities3 img, .activities6 img{
-            height: 250px;
-        }
+    .activities3 img, .activities6 img{
+        height: 250px;
+    }
     
-        .about{
-            padding-bottom: 20px;
+    .about{
+        padding-bottom: 20px;
     } 
-    }         
+} 
+
 @media screen and (max-width: 710px){
     
     #topselect .annonce2{
@@ -618,255 +616,328 @@
 }   
         
 @media screen and (max-width: 550px){
+     
+    .register{
+        font-size: 20px;
+        top: 15px; right: 20px;
+    }
+            
+    header img{
+        width: 120px;
+        height: 50px;
+        padding-top: 0px;
+    }
+            
+    nav{
+        margin-top: 30px;
+        padding-top: 0px;
+    } 
+            
+    .Container h1{
+        width: 80%;
+            
+    }
+            
+    .Container p{
+        font-size: 15px;
+        padding-left: 30px;
+    }
+            
+    .form{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;          
+    }
+            
+    .form button{
+        display: flex;
+        width:55px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-style: hidden;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;   
+    }
 
+    .logo_search i{
+        display: flex;
+    }
 
-            
-        .register{
-            font-size: 20px;
-            top: 15px; right: 20px;
-        }
-            
-        header img{
-            width: 120px;
-            height: 50px;
-            padding-top: 0px;
-        }
-            
-        nav{
-            margin-top: 30px;
-            padding-top: 0px;
-        } 
-            
-        .Container h1{
-            width: 80%;
-            
-        }
-            
-        .Container p{
-            font-size: 15px;
-            padding-left: 30px;
-        }
-            
-        .form{
-            width: 70%;
-            margin-left: auto;
-            margin-right: auto;          
-        }
-            
-        .form button{
-            display: flex;
-            width:55px;
-            padding-left: 20px;
-            padding-right: 20px;
-            border-style: hidden;
-            border-top-left-radius: 15px;
-            border-bottom-left-radius: 15px;   
-        }
-
-        .logo_search i{
-            display: flex;
-        }
-
-        .form span{
-            display: none;
-        }
+    .form span{
+        display: none;
+    }
         
-        button span{
-            font-size: 17px;
-        }  
+    button span{
+        font-size: 17px;
+    }  
             
-        #search{
-            width: 100%;
-            font-size: 16px;
-            padding-left: 20px; 
-        }
+    #search{
+        width: 100%;
+        font-size: 16px;
+        padding-left: 20px; 
+    }
          
-        footer{
-            display: block;
-            width: 100%;
-            padding-top: 10px;
-            margin-left: 0px;      
-        }
+    footer{
+        display: block;
+        width: 100%;
+        padding-top: 10px;
+        margin-left: 0px;      
+    }
             
-        footer h4 {
-                
-            font-size: 18px;
-            margin: 20px 0px 20px 30px;
-        }
+    footer h4 {    
+        font-size: 18px;
+        margin: 20px 0px 20px 30px;
+    }
              
-        .about, .conditions, .assistance{
-            width: 90%;
-        }
+    .about, .conditions, .assistance{
+        width: 90%;
+    }
             
-        .about li, .conditions li, .assistance li{
-            padding-left: 30px;
-            margin-bottom: 10px;
-            font-size: 15px;
-        }
-        .assistance li{
-            margin-bottom: 0px;
-            margin-top: 10px;
-        }
-        .assistance{
-            padding-top: 10px;
-            padding-bottom: 30px;
-        }
+    .about li, .conditions li, .assistance li{
+        padding-left: 30px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .assistance li{
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+    .assistance{
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }       
+}
+
+@media screen and (max-width: 529px){
+    #topselect .annonce2 h3{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 440px){
+
+    body{
+        margin: 20px 0px 0px 0px;
+    }
+
+    .menu li a{
+        font-size: 18px;
+        font-weight: initial;
+    }
+
+    .Container h1{
+        width: 70%;
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+    .Container p{
+        margin-left: 20px;
+        padding-left: 0px;
+    }
+
+    .form{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;          
+    }
+
+    .filter h2{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .filterselect .option{
+        margin-left: 15px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .filter .filterselect{
+        width: 90%;
+    }
+
+    .Container #Info{
+        width: 80%;
+        display: flex; 
+    }
+
+    #Info i{
+        height: min-content;
+    }
+
+    #topselect h2{
+        margin-left: 20PX;
+    }
+
+    #topselect .annonce2{
+        height: 150px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #topselect .annonce2 h3{
+        font-size: 16px;
+        padding: 10px 0px 5px 5px;
+    }
+
+    #topselect .annonce2 p{
+        padding: 0px 0px 10px 5px;
+    }
+
+    .note2{
+        font-size: 13px;
+        padding-left: 0px;
+        padding-top: 15px;
             
     }
-    @media screen and (max-width: 529px){
-        #topselect .annonce2 h3{
-            width: 100%;
+
+    #Courbe{
+        width: auto;
+        margin-right: 20px;
     }
 
-    @media screen and (max-width: 440px){
+    #searchresult .annonce{
+        height: 200px;
+    }
 
-        body{
-            margin: 20px 0px 0px 0px;
-        }
+    #searchresult .annonce img{
+        height: 65%;
+    }
 
-        .menu li a{
-            font-size: 18px;
-            font-weight: initial;
-        }
-        .Container h1{
-            width: 70%;
-            margin-top: 0px;
-            margin-left: 20px;
-        }
+    #searchresult h2{
+        margin-left: 20px;
+        font-size: 20px;
+    }
 
-        .Container p{
-            margin-left: 20px;
-            padding-left: 0px;
-        }
+    #searchresult h3{
+        font-size: 16px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
 
-        .form{
-            width: 90%;
-            margin-left: auto;
-            margin-right: auto;          
-        }
+    #searchresult p{
+        font-size: 15px;
+    }
 
-        .filter h2{
-            font-size: 20px;
-            margin-left: 20px;
-        }
-        .filterselect .option{
-            margin-left: 15px;
-            margin-right: 0px;
-            margin-bottom: 10px;
-        }
-        .Container #Info{
-            width: 80%;
-            display: flex; 
-        }
-        #Info i{
-            height: min-content;
-        }
+    .note{
+        padding-top: 0px;
+    }
 
-        #topselect h2{
-            margin-left: 20PX;
-        }
+    #more{
+        margin-top: 30px;
+        margin-left: 20px;
+    }
 
-        #topselect .annonce2{
-            height: 150px;
-            width: 90%;
-            margin-left: auto;
-            margin-right: auto;
-        }
+    #more a{
+        font-size: 15px;
+        font-weight: bold;
+        padding-left: 0px;
+    }
 
-        #topselect .annonce2 h3{
-            font-size: 16px;
-            padding: 10px 0px 5px 5px;
-        }
+    #Activities{
+        margin-top: 0px;
+    }
 
-        #topselect .annonce2 p{
-            padding: 0px 0px 10px 5px;
-        }
-        .note2{
-            font-size: 13px;
-            padding-left: 0px;
-            padding-top: 15px;
-            
-        }
-        #Courbe{
-            width: auto;
-            margin-right: 20px;
-        }
+    #Activities > h2{
+        font-size: 16px;
+        margin-left: 20px;
+        margin-top: 0px;
+    }
 
-        #searchresult .annonce{
-            height: 200px;
-        }
+    #Activities h3{
+        font-size: 15px;
+    }
 
-        #searchresult .annonce img{
-            height: 65%;
-        }
-        #searchresult h2{
-            margin-left: 20px;
-            font-size: 20px;
-        }
-        #searchresult h3{
-            font-size: 16px;
-            margin-top: 0px;
-            margin-left: 0px;
-        }
-        #searchresult p{
-            font-size: 15px;
-        }
-        .note{
-            padding-top: 0px;
-        }
+    #column2, #column4{
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
 
-        #more{
-            margin-top: 30px;
-            margin-left: 20px;
-        }
+    }
 
-        #more a{
-            font-size: 15px;
-            font-weight: bold;
-            padding-left: 0px;
-        }
+    .activities1, .activities2, .activities3,
+    .activities4, .activities5, .activities6{
+        height: 200px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-        #Activities{
-            margin-top: 0px;
-        }
-        #Activities > h2{
-            font-size: 16px;
-            margin-left: 20px;
-            margin-top: 0px;
-        }
-        #Activities h3{
-            font-size: 15px;
-        }
+    .activities1 img, .activities2 img, .activities3 img,
+    .activities4 img, .activities5 img, .activities6 img{
+        height: 75%;
+    }
+ }
+@media screen and (max-width: 375px){
 
-        #column2, #column4{
-            width: 100%;
-            margin-right: 0px;
-            margin-left: 0px;
+    .Container h1{
+        font-size: 17px ;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    .Container p{
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .filter .option h3{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px;
+    }
+
+    #Info span{
+        font-size: 13px;
+    }
+
+    #topselect h2{
+        font-size: 17px;
+    }
+
+    #topselect .annonce2 h3{
+        font-size: 15px;
+    }
+
+    #topselect .annonce2 p{
+        font-size: 13px;
+        padding-top: 15px;
+    }
+
+    .note2{
+        font-size: 10px;
+    }
+ }
+
+ @media screen and (max-width: 295px){
+
+    header img{
+        width: 100px;
+        height: 40px;
+        padding-top: 5px;
+    }
+    .register{
+        font-size: 18px;
+    }
+
+    .filter .filterselect{
+        width: 100%;
+    }
+
+    #topselect .description{
+        padding-left: 5px;}
+
+    #topselect .annonce2 h3{
+        margin-left: 0px;
+        padding-left: 0px;
         }
-
-        .activities1, .activities2, .activities3,
-        .activities4, .activities5, .activities6{
-            height: 200px;
-            width: 90%;
-            margin-left: auto;
-            margin-right: auto;
+    #topselect .annonce2 p{
+        margin-left: 0px;
+        padding-left: 0px;
         }
-
-        .activities1 img, .activities2 img, .activities3 img,
-        .activities4 img, .activities5 img, .activities6 img{
-            height: 75%;
-        }
-
-            }
+ }
         
-        @media screen and (max-width: 325px){
-            
-            #topselect .description{
-                padding-left: 0px;
-            }
-            .note2{
-                padding-left: 10px;
-            }   
-        }
-    
+      
